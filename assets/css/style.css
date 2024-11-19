@@ -1,0 +1,966 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+     width: 100%;
+     height: auto;
+     background-color: #600000;
+     position: sticky;
+    top: 0;
+    z-index: 1;
+     
+}
+.nav{
+    display: flex;
+     justify-content: center;
+}
+.navlist1{
+display: flex;
+gap: 40px;
+list-style: none;
+padding: 30px 40px;
+}
+.navlist2{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 30px 40px;
+}
+.logo{
+        padding: 15px;
+}
+.navbar a{
+    color:white;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    
+    text-decoration: none;
+}
+.navbar a:hover{
+color: #eaa021;
+}
+
+/* slide 1 */
+.slide1-section{
+    width: 100%;
+    height: auto;
+    background-image: url(../image/slide/slide-1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+.slide1content{
+    padding: 90px 140px;
+    
+}
+.slide1-heading1{
+    color:#de9820 ;
+    font-size: 120px;
+    font-family: "Sacramento", cursive;
+}
+.slide1-heading2{
+    color: white;
+    font-size: 45px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+    letter-spacing: 8px;
+    position: relative;
+    bottom: 65px;
+    /* padding-left: 160px; */
+}
+.slide1-content{
+    color: white;
+    font-size: 13px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    letter-spacing: 1px;
+    position: relative;
+    bottom: 30px;
+    padding-left: 20px;
+    line-height: 2;
+   
+
+}
+.slide1-viewbutton{
+    color: white;
+    font-size: 13px;
+    border-radius: 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    width: 130px;
+    height: 30px;
+    background-color: #9c1126 ;
+    border: none;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    /* padding-left: 160px; */
+    /* position: relative;
+    left: 190px; */
+    cursor: pointer;
+}
+.slide1-viewbutton:hover{
+    background-color: #de9820;
+    box-shadow: -1px 2px 30px -8px rgba(140,41,41,1);
+    -webkit-box-shadow: -1px 2px 30px -8px rgba(140,41,41,1);
+    -moz-box-shadow: -1px 2px 30px -8px rgba(140,41,41,1);
+
+}
+.slide1-viewbutton a{
+    color: white;
+    font-size: 13px;
+    border-radius: 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+/* about */
+.about-section{
+width: 100%;
+height: auto;
+}
+.about{
+    display: flex;
+   justify-content: center;
+   gap: 40px;
+   padding: 90px 110px;
+
+}
+.about-heading-1{
+    color: #eaa021;
+    font-size: 100px;
+    font-weight: 200;
+    font-family: "Sacramento", cursive;
+    
+}
+.about-heading-2{
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    border: solid 1px rgba(0, 0, 0, .5);
+    border-left: none;
+    border-right: none;
+    width: 350px;
+    height: auto;
+    /* margin-bottom: 30px; */
+   position: relative;
+   bottom: 40px;
+   
+   
+}
+.about-content{
+    color: black;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    /* text-align: left; */
+    line-height: 1.9;
+    text-align: justify;
+}
+.about-image{
+    border-radius: 20px;
+    width: 550px;
+    height: 350px;
+    box-shadow: -1px 2px 30px -8px rgba(140,41,41,1);
+    -webkit-box-shadow: -1px 2px 30px -8px rgba(140,41,41,1);
+    -moz-box-shadow: -1px 2px 30px -8px rgba(140,41,41,1);
+}
+
+/* cards */
+.cardbg{
+    width: 100%;
+    height: auto;
+    background-color: #fdf5e8;
+}
+.card-heading{
+    font-size: 18px;
+    color: black;
+    font-weight: 700;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.card-content{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 15px;
+    color:#707070;
+    font-weight: 400;
+}
+.card-button {
+    height: 35px;
+    width: 130px;
+    border-radius: 60px;
+    background-color:#9c1126;
+    color: white;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    /* letter-spacing: -0.5px; */
+}
+.card-button a{
+    color: white;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.card-button:hover{
+    background-color: #de9820;
+    box-shadow: -1px 2px 30px -8px rgba(140,41,41,1);
+    -webkit-box-shadow: -1px 2px 30px -8px rgba(140,41,41,1);
+    -moz-box-shadow: -1px 2px 30px -8px rgba(140,41,41,1);
+
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 90px;
+    justify-content: center;
+    padding: 90px 90px;
+}
+.card1{
+    
+    text-align: center;
+}
+.card1 img{
+padding-bottom: 20px;
+}
+.card1 p{
+padding-bottom: 20px;
+}
+
+/* slide2 */
+.slide2{
+    width: 100%;
+    height: auto;
+    background-image: url(../image/background/bg-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.slide2-heading1{
+    color: #eaa021;
+    font-weight: 200;
+    font-size: 100px;
+    font-family: "Sacramento", cursive;
+
+}
+.slide2-heading2{
+    font-size:40px;
+    color:white;
+    font-weight:bold;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    border-left: none;
+    border-right: none;
+   
+    font-family: "Plus Jakarta Sans", sans-serif;
+    position: relative;
+    bottom: 40px;
+    
+
+}
+.slide2-heading{
+    text-align: center;
+    padding: 90px 500px;
+}
+
+/* menu-section */
+.menu1-section{
+    width: 100%;
+    height: auto;
+    background-image: url(../image/background/bg-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.column1 p{
+    color: #eaa021;
+    font-size: 48px;
+    font-weight: 500;
+    font-family: "Sacramento", cursive;
+
+}
+.column1 h4{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    padding-bottom:10px ;
+}
+.column1 h5{
+    color:#726d6d ;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-style: italic;
+    padding-bottom: 20px;
+}
+.column2 h5{
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+.column2 p{
+    color: #eaa021;
+    font-size: 12px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    padding-bottom: 20px;
+    
+}
+.column2 h3{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Plus Jakarta Sans", sans-serif;
+padding-bottom: 50px ;
+    
+}
+.column3 h5{
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+.column3 p{
+    color: #eaa021;
+    font-size: 12px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    padding-bottom: 20px;
+    
+}
+.column3 h3{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    padding-bottom: 50px ;
+}
+.menu1-sub{
+    display: flex;
+    gap: 20px;
+
+}
+.menu1 ul{
+    list-style: none;
+}
+.menu1{
+    padding: 80px 60px;
+}
+.menu1-button{
+    height: 35px;
+    width: 130px;
+    border-radius: 60px;
+    background-color:#9c1126;
+    color: white;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.menu1-button a{
+    color: white;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+.menu1-button:hover{
+    background-color: #de9820;
+    box-shadow: -1px 2px 30px -8px rgba(140,41,41,1);
+    -webkit-box-shadow: -1px 2px 30px -8px rgba(140,41,41,1);
+    -moz-box-shadow: -1px 2px 30px -8px rgba(140,41,41,1);
+
+}
+/* slide3 */
+.slide3{
+    width: 100%;
+    height: auto;
+    background-image: url(../image/background/bg-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.slide3-heading1{
+    color: #eaa021;
+    font-weight: 200;
+    font-size: 100px;
+    font-family: "Sacramento", cursive;
+
+}
+.slide3-heading2{
+    font-size:40px;
+    color:white;
+    font-weight:bold;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    border-left: none;
+    border-right: none;
+   
+    font-family: "Plus Jakarta Sans", sans-serif;
+    position: relative;
+    bottom: 40px;
+    
+
+}
+.slide3-heading{
+    text-align: center;
+    padding: 90px 500px;
+}
+
+/* menu2 */
+.menu2-section{
+    width: 100%;
+    height: auto;
+    background-image: url(../image/background/bg-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.menu2-sub{
+    display: flex;
+    justify-content: right;
+    gap: 40px;
+}
+.menu2-button{
+    height: 35px;
+    width: 130px;
+    border-radius: 60px;
+    background-color:#9c1126;
+    color: white;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    
+}
+.menu2-button:hover{
+    background-color: #de9820;
+    box-shadow: -1px 2px 30px -8px rgba(140,41,41,1);
+    -webkit-box-shadow: -1px 2px 30px -8px rgba(140,41,41,1);
+    -moz-box-shadow: -1px 2px 30px -8px rgba(140,41,41,1);
+
+}
+.menu2-button a{
+    color: white;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.menu2{
+    
+    padding: 80px 150px;
+}
+.menu2but{
+   
+    text-align: right;
+}
+
+.menu2 ul{
+list-style: none;
+}
+
+/* menupics */
+.menupics{
+    width: 100%;
+    height: auto;
+}
+.menuimages{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+.cir{
+    width: 65px;
+    height: 65px;
+    background-color:#9c1126;
+    color: white;
+    border-radius: 100px;
+    text-align: center;
+    position: relative;
+    top: -100px;
+    left: 60px;
+    opacity: 0;
+}
+.cir h5{
+ position: relative;
+ top: 22px;
+ font-size: 18px;
+ font-family: "Plus Jakarta Sans", sans-serif;
+}
+.cir:hover{
+    opacity: 100%;
+    transition: 1s ease-in;
+    transform: rotate(-45deg);
+}
+.menuimages{
+    padding: 60px 40px;
+}
+/* customer-reviews */
+.customer-reviews-section{
+    width: 100%;
+    height: auto;
+    background-image: url(../image/background/bg-side-1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+.customer-reviews{
+    width: 40%;
+    height: auto;
+    background-color: #9c1126;
+    padding: 80px;
+
+}
+.customer-reviews-h1{
+    font-family: "Sacramento", cursive;
+    color: #eaa021;
+    font-weight: 200;
+    font-size: 100px;
+    line-height: 1.3em;
+}
+.customer-reviews-h2{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin: 0;
+    line-height: 40px;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    border-left: none;
+    border-right: none;
+    display: inline-block;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: white;
+    position: relative;
+    bottom: 30px;
+}
+.customer-reviews-content h5{
+    font-size: 20px;
+    line-height: 1.6em;
+    font-weight: 400;
+    border: none;
+    padding: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: white;
+    padding-bottom: 20px;
+}
+.customer-reviews-content p{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: white;
+}
+.reviews{
+  display: flex;
+  justify-content: right;
+}
+
+/* slide 4 */
+.slide4{
+    width: 100%;
+    height: auto;
+    background-image: url(../image/background/bg-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.slide4-heading1{
+    color: #eaa021;
+    font-weight: 200;
+    font-size: 100px;
+    font-family: "Sacramento", cursive;
+
+}
+.slide4-heading2{
+    font-size:40px;
+    color:white;
+    font-weight:bold;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    border-left: none;
+    border-right: none;
+   
+    font-family: "Plus Jakarta Sans", sans-serif;
+    position: relative;
+    bottom: 40px;
+    
+
+}
+.slide4-heading{
+    text-align: center;
+    padding: 40px 300px;
+}
+.slide4-card1 h5{
+font-size: 15px;
+font-family: "Plus Jakarta Sans", sans-serif;
+color: #eaa021;
+font-weight: 400;
+}
+.slide4-card1 p{
+font-size: 20px;
+font-family: "Plus Jakarta Sans", sans-serif;
+color: white;
+font-weight: 400;
+}
+.slide4-cards{
+    display: flex;
+    justify-content: space-around;
+}
+.slide4-sub{
+    padding: 50px;
+}
+/* footer */
+.footer-section{
+    width: 100%;
+    height: auto;
+    background-color: #600000;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-location h4{
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 18px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: white;
+    padding-bottom: 15px;
+
+}
+.footer-location p{
+    font-weight: normal;
+    line-height: 1.5;
+    font-size: 15px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: white;
+}
+.footer img{
+
+}
+.footer-links h3{
+    color: white;
+    padding: 12px;
+    
+}
+.footer-links{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 30px;
+    
+}
+.footer{
+    padding: 60px;
+}
+.footer-links h3:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.copyright p{
+    color: azure;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:#c1152f;
+    position: fixed;
+    top: 80%;
+    left: 90%;
+    z-index: 1;
+    
+}
+.fab-icon{
+    color: white;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+/* mobile */
+@media screen and (max-width:500px) {
+     /* fab */
+     .fab{
+        position:fixed;
+        top: 90%;
+        left: 85%;
+    } 
+    
+    /* navbar */
+    
+    .navbar{
+        display: block;
+    }
+    .navlist1{
+        display: block;
+        padding: 15px 20px;
+    }
+    .navlist2{
+        display: block;
+        padding: 15px 20px;
+    }
+    .logo{
+        padding-top: 20px;
+    }
+    .navlist1 li{
+       padding:5px 5px ;
+    }
+    .navlist2 li{
+        padding:5px 5px ;
+     }
+
+     /* slide1 */
+     .slide1-heading1{
+        font-size: 50px;
+
+     }
+     .slide1-heading2{
+        font-size: 20px;
+        position: relative;
+        bottom: 30px;
+        padding-bottom: 30px;
+     }
+     .slide1content{
+        padding: 70px 40px;
+        
+    }
+
+     /* about */
+     .about{
+        display: block;
+        padding: 20px 40px;
+     }
+    .about-image{
+        width: 300px;
+        height: 200px;
+    }
+    .about-content p{
+        font-size: 15px;
+        padding-bottom: 20px;
+        text-align: justify;
+    }
+
+    /* cards */
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
+        justify-content: center;
+        padding: 40px 20px;
+    }
+
+    /* slide2 */
+.slide2{
+   display: block;
+   width: 100%;
+  
+}
+
+.slide2-heading{
+    padding: 40px 30px;
+}
+
+/* menu1 */
+.menu1{
+    padding: 40px 30px;
+}
+
+.column1 h4{
+    font-size: 15px;
+}
+.column1 h5{
+    font-size: 12px;
+}
+.column2 h3{
+    padding-bottom: 60px;
+    
+}
+.column3 h3{
+    padding-bottom: 60px;
+    
+}
+
+ /* slide3 */
+ .slide3{
+    display: block;
+    width: 100%;
+   
+ }
+ 
+ .slide3-heading{
+     padding: 40px 30px;
+ }
+ /* menu2 */
+ .menu2-section{
+display: block;
+ }
+ .menu2{
+    
+    padding: 40px 40px;
+}
+.menu2-section{
+    background: transparent;
+}
+
+/* menupics */
+.menuimages{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 20px 20px;
+}
+.menuimages img{
+    width: 100%;
+    height: auto;
+}
+/* customer-reviews */
+.customer-reviews-section{
+    background-image: none;
+    
+}
+.customer-reviews{
+    width: 100%;
+    height: auto;
+    background-color: #9c1126;
+    padding: 20px;
+    
+    
+
+}     
+.customer-reviews-content h5{
+    font-size: 15px;
+}
+.customer-reviews-h1 p{
+font-size: 70px;
+}
+.customer-reviews-h2 p{
+    font-size: 30px;
+    }
+
+    /* slide4 */
+ .slide4-cards{
+        display: block;
+        padding-left: 90px;
+    }
+    .slide4-sub{
+        padding: 20px;
+    }
+    .slide4-heading{
+        text-align: center;
+        padding: 40px 20px;
+    }
+    /* footer */
+    .footer-location{
+        font-size: 10px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+    }
+    .footer{
+        display: block;
+    }
+    .footer img{
+        padding-left: 70px;
+    }
+
+}
+/* tab */
+@media screen and (min-width:500px) and (max-width:900px) {
+    /* about */
+    .about{
+        display: block;
+        padding: 20px 40px;
+     }
+    .about-image{
+        width: 400px;
+        height: 300px;
+        
+    }
+    
+    .about-content p{
+        font-size: 15px;
+        padding-bottom: 20px;
+        text-align: justify;
+    }
+
+    /* cards */
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        
+        justify-content: center;
+        padding: 40px 30px;
+    }
+
+        /* slide2 */
+.slide2{
+    display: block;
+    width: 100%;
+   
+ }
+ 
+ .slide2-heading{
+     padding: 40px 30px;
+ }
+
+ /* slide3 */
+.slide3{
+    display: block;
+    width: 100%;
+   
+ }
+ 
+ .slide3-heading{
+     padding: 40px 30px;
+ }
+ /* menu2 */
+ 
+ .menu2-section{
+    display: block;
+     }
+     .menu2{
+        
+        padding: 80px 200px;
+    }
+    .menu2-section{
+        background: transparent;
+    }
+    /* menupics */
+.menuimages{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 40px 40px;
+}
+.menuimages img{
+    width: 100%;
+    height: auto;
+}
+/* slide4 */
+.slide4-heading{
+    text-align: center;
+    padding: 40px 20px;
+}
+   
+
+     
+}
+

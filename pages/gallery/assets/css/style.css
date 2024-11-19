@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.copyright p{
+    color: azure;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:#c1152f;
+    position: fixed;
+    top: 80%;
+    left: 90%;
+    z-index: 1;
+}
+.fab-icon{
+    color: white;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+/* navbar */
+.navbar{
+    width: 100%;
+    height: auto;
+    background-color: #600000;
+    position: sticky;
+   top: 0;
+   z-index: 1;
+    
+}
+.nav{
+   display: flex;
+    justify-content: center;
+}
+.navlist1{
+display: flex;
+gap: 40px;
+list-style: none;
+padding: 30px 40px;
+}
+.navlist2{
+   display: flex;
+   gap: 40px;
+   list-style: none;
+   padding: 30px 40px;
+}
+.logo{
+       padding: 15px;
+}
+.navbar a{
+   color: white;
+   font-family: "Plus Jakarta Sans", sans-serif;
+   font-size: 12px;
+   font-weight: 500;
+   letter-spacing: 2px;
+   
+   text-decoration: none;
+}
+.navbar a:hover{
+    color: #eaa021;
+}
+/* slide1 */
+.slide1-section{
+    width: 100%;
+    height: auto;
+    background-image: url(../image/bg-10.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    }
+    .heading h5{
+        font-family: "Sacramento", cursive;
+        color: #eaa021;
+        font-weight: 200;
+        font-size: 150px;
+        line-height: 1.3em;
+    }
+    .heading p{
+        font-size: 40px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        margin: 0;
+        line-height: 40px;
+        border: solid 1px rgba(255, 255, 255, 0.5);
+        border-left: none;
+        border-right: none;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        color: white;
+    }
+    .content a{
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 14px;
+        color: rgb(255 255 255 / 50%);
+        text-decoration: none;
+    }
+    .content a:hover{
+        color: #eaa021;
+    }
+    .content p{
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 14px;
+        color: #eaa021;
+       
+    }
+    .content h4{
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 14px;
+        color: white;
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .slide1{
+        text-align: center;
+        padding: 120px 300px;
+    }
+    .heading2{
+       position: relative;
+       bottom: 50px;
+    }
+
+/* gallery */
+.gallery-section{
+    width: 100%;
+    height: auto;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    gap: 30px;
+    padding: 100px;
+}
+.image{
+    border-radius: 20px;
+   
+
+}
+.gal1{
+    border-radius: 20px;
+    box-shadow: -1px 2px 30px -8px rgba(140,41,41,1);
+    -webkit-box-shadow: -1px 2px 30px -8px rgba(140,41,41,1);
+    -moz-box-shadow: -1px 2px 30px -8px rgba(140,41,41,1);
+}
+.gal1 img:hover{
+    transform: scale(1.1);
+    transition: 0.7s ease-in;
+   
+}
+.bg{
+    width: 300px;
+    height: 300px;
+    background-image: url(../image/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    /* position: relative; */
+    /* background-image: unset; */
+
+    
+
+}
+.bg:hover{
+    /* transform: scale(1.2); */
+    transition: 1s ease-in;
+
+    content: fixed;
+}
+.bg-align{
+    display: flex;
+    justify-content: space-around;
+}
+.bg-two{
+    /* margin: 10px; */
+   /* padding: 10px; */
+
+
+
+   position: relative;
+   top: 10px;
+
+   margin-left: auto;
+   margin-right: auto;
+   /* margin: auto; */
+   /* position: relative; */
+  /* text-align: center; */
+    width: 280px;
+    height: 280px;
+    background-color: #600000;
+    opacity: 0;
+    border-radius: 10px;
+}
+.bg-two:hover{
+opacity: 50%;
+transition: 0.1s ease-in-out;
+}
+.gal1 img{
+width: 100%;
+height: 100%;
+border-radius: 20px;
+cursor: pointer;
+}
+.gal1{
+    position: relative;
+}
+.box1{
+    position: absolute;
+    top: 40px;
+    /* bottom: 0; */
+    left: 50px;
+    border: #ffffff solid 1px;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+}
+.box1:hover{
+    opacity: 1;
+}
+.gal1 img:hover{
+   
+}
+
+
+/* footer */
+.footer-section{
+    width: 100%;
+    height: auto;
+    background-color: #600000;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-location h4{
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 18px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: white;
+    padding-bottom: 15px;
+
+}
+.footer-location p{
+    font-weight: normal;
+    line-height: 1.5;
+    font-size: 15px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: white;
+}
+.footer img{
+
+}
+.footer-links h3{
+    color: white;
+    padding: 12px;
+    
+}
+.footer-links{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 30px;
+    
+}
+.footer{
+    padding: 60px;
+}
+.footer-links h3:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+
+/* mobile */
+@media screen and (max-width:500px) {
+    /* fab */
+    .fab{
+        position:fixed;
+        top: 90%;
+        left: 85%;
+    } 
+
+
+ /* navbar */
+ .navbar{
+    display: block;
+}
+.navlist1{
+    display: block;
+    padding: 15px 20px;
+}
+.navlist2{
+    display: block;
+    padding: 15px 20px;
+}
+.logo{
+    padding-top: 20px;
+}
+.navlist1 li{
+   padding:5px 5px ;
+}
+.navlist2 li{
+    padding:5px 5px ;
+ }
+/* slide1 */
+.heading h5{
+    font-size: 50px;
+
+ }
+.heading p{
+font-size: 20px;
+}
+.slide1{
+    text-align: center;
+    padding: 60px 20px;
+}
+.heading2{
+    position: relative;
+    top: 2px;
+    
+ }
+ .heading{
+    padding-bottom: 20px;
+ }
+ .slide1-section{
+    background-position: 100%;
+    background-size: cover;
+   
+ }
+/* gallery */
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    padding: 40px 40px;
+}
+
+/* footer */  
+.footer-location{
+    font-size: 10px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+}
+.footer{
+    display: block;
+}
+.footer img{
+    padding-left: 70px;
+} 
+}
+
+/* tab */
+@media screen and (min-width:500px) and (max-width:900px) {
+ /* navbar */
+
+/* slide1 */
+.slide1{
+    text-align: center;
+    padding: 90px 20px;
+}
+/* gallery */
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    padding: 40px 40px;
+}
+/* footer */   
+}
